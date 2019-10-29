@@ -14,6 +14,8 @@
 		EFB1C8B12368ED5000652B4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB1C8B02368ED5000652B4B /* Assets.xcassets */; };
 		EFB1C8B42368ED5000652B4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB1C8B22368ED5000652B4B /* LaunchScreen.storyboard */; };
 		EFB1C8B72368ED5000652B4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB1C8B62368ED5000652B4B /* main.m */; };
+		EFB1C8C32368F71D00652B4B /* CESMacOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB1C8C22368F71D00652B4B /* CESMacOSVersion.m */; };
+		EFB1C8C62368FE6C00652B4B /* CESVersionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB1C8C52368FE6C00652B4B /* CESVersionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		EFB1C8B32368ED5000652B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFB1C8B52368ED5000652B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFB1C8B62368ED5000652B4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFB1C8C12368F71D00652B4B /* CESMacOSVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CESMacOSVersion.h; sourceTree = "<group>"; };
+		EFB1C8C22368F71D00652B4B /* CESMacOSVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CESMacOSVersion.m; sourceTree = "<group>"; };
+		EFB1C8C42368FE6C00652B4B /* CESVersionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CESVersionController.h; sourceTree = "<group>"; };
+		EFB1C8C52368FE6C00652B4B /* CESVersionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CESVersionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +67,55 @@
 		EFB1C8A32368ED5000652B4B /* MacOS-Versions-Obj-C */ = {
 			isa = PBXGroup;
 			children = (
-				EFB1C8A42368ED5000652B4B /* AppDelegate.h */,
-				EFB1C8A52368ED5000652B4B /* AppDelegate.m */,
-				EFB1C8A72368ED5000652B4B /* SceneDelegate.h */,
-				EFB1C8A82368ED5000652B4B /* SceneDelegate.m */,
-				EFB1C8AA2368ED5000652B4B /* ViewController.h */,
-				EFB1C8AB2368ED5000652B4B /* ViewController.m */,
-				EFB1C8AD2368ED5000652B4B /* Main.storyboard */,
-				EFB1C8B02368ED5000652B4B /* Assets.xcassets */,
-				EFB1C8B22368ED5000652B4B /* LaunchScreen.storyboard */,
-				EFB1C8B52368ED5000652B4B /* Info.plist */,
+				EFB1C8C02368F64900652B4B /* Scene Delegate */,
+				EFB1C8BD2368F5E700652B4B /* View Controllers */,
+				EFB1C8BE2368F61100652B4B /* Storyvboards */,
+				EFB1C8BF2368F63000652B4B /* Resources */,
 				EFB1C8B62368ED5000652B4B /* main.m */,
+				EFB1C8C12368F71D00652B4B /* CESMacOSVersion.h */,
+				EFB1C8C22368F71D00652B4B /* CESMacOSVersion.m */,
+				EFB1C8C42368FE6C00652B4B /* CESVersionController.h */,
+				EFB1C8C52368FE6C00652B4B /* CESVersionController.m */,
 			);
 			path = "MacOS-Versions-Obj-C";
+			sourceTree = "<group>";
+		};
+		EFB1C8BD2368F5E700652B4B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFB1C8AA2368ED5000652B4B /* ViewController.h */,
+				EFB1C8AB2368ED5000652B4B /* ViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EFB1C8BE2368F61100652B4B /* Storyvboards */ = {
+			isa = PBXGroup;
+			children = (
+				EFB1C8AD2368ED5000652B4B /* Main.storyboard */,
+				EFB1C8B22368ED5000652B4B /* LaunchScreen.storyboard */,
+			);
+			path = Storyvboards;
+			sourceTree = "<group>";
+		};
+		EFB1C8BF2368F63000652B4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EFB1C8A42368ED5000652B4B /* AppDelegate.h */,
+				EFB1C8A52368ED5000652B4B /* AppDelegate.m */,
+				EFB1C8B02368ED5000652B4B /* Assets.xcassets */,
+				EFB1C8B52368ED5000652B4B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EFB1C8C02368F64900652B4B /* Scene Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				EFB1C8A72368ED5000652B4B /* SceneDelegate.h */,
+				EFB1C8A82368ED5000652B4B /* SceneDelegate.m */,
+			);
+			path = "Scene Delegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +192,8 @@
 				EFB1C8A62368ED5000652B4B /* AppDelegate.m in Sources */,
 				EFB1C8B72368ED5000652B4B /* main.m in Sources */,
 				EFB1C8A92368ED5000652B4B /* SceneDelegate.m in Sources */,
+				EFB1C8C62368FE6C00652B4B /* CESVersionController.m in Sources */,
+				EFB1C8C32368F71D00652B4B /* CESMacOSVersion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +335,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBB8C9E36E;
-				INFOPLIST_FILE = "MacOS-Versions-Obj-C/Info.plist";
+				INFOPLIST_FILE = "MacOS-Versions-Obj-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBB8C9E36E;
-				INFOPLIST_FILE = "MacOS-Versions-Obj-C/Info.plist";
+				INFOPLIST_FILE = "MacOS-Versions-Obj-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
