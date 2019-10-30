@@ -40,6 +40,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
+    
+    //return [[_cesVersionController versions] count];
     return _cesVersionController.versions.count;
 }
 
@@ -49,9 +51,10 @@
     
     // Configure the cell...
     
+    //CESMacOSVersion *version = [[_cesVersionController versions] objectAtIndex:[indexPath row]];
     CESMacOSVersion *version = _cesVersionController.versions[indexPath.row];
     
-    // [[cell textLabel] text]; 
+    // [[cell textLabel] Text]; 
     //cell.textLabel.text = [NSString stringWithFormat:@"This is cell #%i", indexPath.row];
     cell.textLabel.text = version.name;
     cell.detailTextLabel.text = version.releaseDate;
