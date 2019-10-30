@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class CESMacOSVersion;
+
 //NS_ASSUME_NONNULL_BEGIN
 
 @interface CESVersionController : NSObject
 
-@property NSArray *versions;
+@property (readonly) NSArray *versions;
 - (instancetype)init;
 
 @end
