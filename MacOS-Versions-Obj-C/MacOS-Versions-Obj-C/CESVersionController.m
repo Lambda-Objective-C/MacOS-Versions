@@ -42,7 +42,7 @@
                      [[CESMacOSVersion alloc] initWithName:@"Sierra" releaseDate:@"September 20, 2016"],
                      [[CESMacOSVersion alloc] initWithName:@"High Sierra" releaseDate:@"September 25, 2017"],
                      [[CESMacOSVersion alloc] initWithName:@"Mojave" releaseDate:@"September 24, 2018"],
-                     [[CESMacOSVersion alloc] initWithName:@"Catalina" releaseDate:@"October 24, 2019"],
+                     [[CESMacOSVersion alloc] initWithName:@"Catalina" releaseDate:@"October 20, 2019"],
                       nil];
     }
     return self;

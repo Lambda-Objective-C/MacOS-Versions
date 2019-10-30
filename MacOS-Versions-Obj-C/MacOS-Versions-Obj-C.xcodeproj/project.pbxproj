@@ -16,6 +16,7 @@
 		EFB1C8B72368ED5000652B4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB1C8B62368ED5000652B4B /* main.m */; };
 		EFB1C8C32368F71D00652B4B /* CESMacOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB1C8C22368F71D00652B4B /* CESMacOSVersion.m */; };
 		EFB1C8C62368FE6C00652B4B /* CESVersionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB1C8C52368FE6C00652B4B /* CESVersionController.m */; };
+		EFB1C8C92369284200652B4B /* CESTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB1C8C82369284200652B4B /* CESTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		EFB1C8C22368F71D00652B4B /* CESMacOSVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CESMacOSVersion.m; sourceTree = "<group>"; };
 		EFB1C8C42368FE6C00652B4B /* CESVersionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CESVersionController.h; sourceTree = "<group>"; };
 		EFB1C8C52368FE6C00652B4B /* CESVersionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CESVersionController.m; sourceTree = "<group>"; };
+		EFB1C8C72369284200652B4B /* CESTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CESTableViewController.h; sourceTree = "<group>"; };
+		EFB1C8C82369284200652B4B /* CESTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CESTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 				EFB1C8C22368F71D00652B4B /* CESMacOSVersion.m */,
 				EFB1C8C42368FE6C00652B4B /* CESVersionController.h */,
 				EFB1C8C52368FE6C00652B4B /* CESVersionController.m */,
+				EFB1C8C72369284200652B4B /* CESTableViewController.h */,
+				EFB1C8C82369284200652B4B /* CESTableViewController.m */,
 			);
 			path = "MacOS-Versions-Obj-C";
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				EFB1C8A92368ED5000652B4B /* SceneDelegate.m in Sources */,
 				EFB1C8C62368FE6C00652B4B /* CESVersionController.m in Sources */,
 				EFB1C8C32368F71D00652B4B /* CESMacOSVersion.m in Sources */,
+				EFB1C8C92369284200652B4B /* CESTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
